@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>RedBus</title>
+
+</head>
+
+<body>
+	<header>
+			<h1 style=text-align:center;>Welcome to REDBUS</h1>
+			<p style=text-align:center;>
+				<a href="/home">home</a> | <a href="/passengerSignup">Passenger-Service</a> | <a href="/passengerlogin">Passenger-Login</a>
+				| <a href="/showPassengers">Show passengers</a>
+			</p>
+		</header>
+	<hr>
+	<h2> hey! <span th:text="${key.name}"></span></h2>
+	<p style=text-align:center;>your details are:<br>
+		Name: <span th:text="${key.name}"></span><br>  PhoneNumber:<span th:text="${key.phone}"></span><br> Age:<span th:text="${key.age}"></span><br>Gender:<span th:text="${key.gender}"></span><br>Password:<span th:text="${key.password}"></span><br>City:<span th:text="${key.city}"></span><br>
+		 Email:<span th:text="${key.email}"></span><br> PinCode:<span th:text="${key.pincode}"></span><br>
+	</p>
+	
+	<br><br><br>
+			<hr>
+			<footer>
+				<h3 style=text-align:center;>copyright@redbus</h3>
+			</footer>
+		</body>
+
+	</html>	
